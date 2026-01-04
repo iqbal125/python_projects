@@ -29,3 +29,8 @@ A modern and modular FastAPI application for managing Todo items with full CRUD 
 
 ### Run Project
 ```uv run fastapi dev```
+
+
+
+### Frontend
+https://github.com/iqbal125/react_projects/tree/main/langgraph-1
