@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import AsyncCrud from './pages/AsyncCrud';
 import LocalCrud from './pages/LocalCrud';
+import LLamaChat from './pages/LLamaChat';
 
 const App: React.FC = () => {
   return (
@@ -30,6 +31,12 @@ const App: React.FC = () => {
                 >
                   Local CRUD
                 </Link>
+                <Link
+                  to="/chat"
+                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                >
+                  LLama Chat
+                </Link>
               </nav>
             </header>
             <div className="p-6">
@@ -37,6 +44,7 @@ const App: React.FC = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/async" element={<AsyncCrud />} />
                 <Route path="/local" element={<LocalCrud />} />
+                <Route path="/chat" element={<LLamaChat />} />
               </Routes>
             </div>
           </div>

@@ -10,4 +10,5 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "requests>=2.32.3",
     "sqlalchemy>=2.0.41",
+    "llama-index-llms-ollama>=0.9.1"
 ]
