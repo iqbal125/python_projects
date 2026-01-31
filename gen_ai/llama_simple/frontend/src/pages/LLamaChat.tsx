@@ -63,7 +63,7 @@ const LlamaChat: React.FC = () => {
 
         try {
             const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
-            const res = await fetch(`${baseUrl}/llama/chat?q=${encodeURIComponent(query)}`);
+            const res = await fetch(`${baseUrl}/llama/chat-rag?q=${encodeURIComponent(query)}`);
 
             if (!res.ok) {
                 throw new Error('Failed to get response');
